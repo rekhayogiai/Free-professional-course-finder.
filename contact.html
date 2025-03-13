@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ & Contact Us - Free Course Finder</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+.contact-options{background: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  
+}
+#d{
+    background-color:#007bff ;
+    color: whitesmoke;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    
+ 
+}
+
+.faq-container {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.faq h2 {
+    color: #007bff;
+}
+
+.faq {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.faq-question {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.faq-question:hover {
+    background: #0056b3;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border-left: 3px solid #007bff;
+    background: #f9f9f9;
+}
+
+/* Contact Us Section */
+.contact-container {
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+a {
+    display: block;
+    margin: 10px ;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    width: 80%;
+    margin: 10px 0;
+}
+
+.whatsapp { background: #25D366; }
+.telegram { background: #0088cc; }
+</style>
+</head>
+<body>
+
+    <!-- FAQ Section -->
+    <div class="faq-container">
+        <a id="d" href="index.html" > 🔙Go Back</a>
+        
+        
+      <button id="toggle-language">🌍 Switch to Hindi</button>
+    </header>
+
+    <section id="faq">
+        <h2 id="faq-title">Frequently Asked Questions (FAQs)</h2>
+
+        <div class="faq-item">
+            <button class="faq-question" data-en="1. What is Free Professional Course Finder?" data-hi="1. Free Professional Course Finder क्या है?">
+                1. What is Free Professional Course Finder?
+            </button>
+            <div class="faq-answer" data-en="It is an online platform that helps users find free professional courses from various providers." 
+                 data-hi="यह एक ऑनलाइन प्लेटफॉर्म है जो उपयोगकर्ताओं को विभिन्न प्रदाताओं से मुफ्त व्यावसायिक पाठ्यक्रम खोजने में मदद करता है।">
+                It is an online platform that helps users find free professional courses from various providers.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-en="2. Are all the courses on this platform free?" data-hi="2. क्या इस प्लेटफॉर्म पर सभी पाठ्यक्रम निःशुल्क हैं?">
+                2. Are all the courses on this platform free?
+            </button>
+            <div class="faq-answer" data-en="Yes, all listed courses are free, but some providers may offer paid certificates." 
+                 data-hi="हाँ, सभी सूचीबद्ध पाठ्यक्रम मुफ्त हैं, लेकिन कुछ प्रदाता भुगतान प्रमाणपत्र प्रदान कर सकते हैं।">
+                Yes, all listed courses are free, but some providers may offer paid certificates.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-en="3. How do I enroll in a course?" data-hi="3. मैं किसी पाठ्यक्रम में नामांकन कैसे करूं?">
+                3. How do I enroll in a course?
+            </button>
+            <div class="faq-answer" data-en="Click on the course link, and you will be redirected to the provider's website." 
+                 data-hi="पाठ्यक्रम लिंक पर क्लिक करें, और आपको प्रदाता की वेबसाइट पर पुनर्निर्देशित किया जाएगा।">
+                Click on the course link, and you will be redirected to the provider's website.
+            </div>
+        </div>
+
+    </section>
+
+        <p id="responseMessage" class="hidden"></p>
+    </div>
+  <div class="contact-options">
+            <h3>📲 Other Ways to Contact</h3>
+          
+            <a href="https://t.me/rekhayogi" target="_blank" class="telegram">Telegram Chat</a>
+           
+    </div>
+
+    <script>// FAQ Toggle Function
+document.querySelectorAll(".faq-question").forEach(button => {
+button.addEventListener("click", () => {
+let answer = button.nextElementSibling;
+answer.style.display = (answer.style.display === "block") ? "none" : "block";
+});
+});
+
+// Language Toggle Function
+document.getElementById("toggle-language").addEventListener("click", () => {
+let isEnglish = document.getElementById("toggle-language").textContent.includes("Switch to Hindi");
+
+document.getElementById("toggle-language").textContent = isEnglish ? "🌍 अंग्रेजी में बदलें" : "🌍 Switch to Hindi";
+document.getElementById("faq-title").textContent = isEnglish ? "अक्सर पूछे जाने वाले प्रश्न (FAQs)" : "Frequently Asked Questions (FAQs)";
+
+document.querySelectorAll(".faq-question").forEach(button => {
+button.textContent = isEnglish ? button.getAttribute("data-hi") : button.getAttribute("data-en");
+});
+
+document.querySelectorAll(".faq-answer").forEach(answer => {
+answer.textContent = isEnglish ? answer.getAttribute("data-hi") : answer.getAttribute("data-en");
+});
+});</script>
+
+</body>
+</html>
